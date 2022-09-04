@@ -5,61 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BarberShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav>
         <a href="./index.html">
-          <img src="./images/logo.svg" alt="Barbershop logo" />
+          <img src="./images/logo.svg" alt="Barbershop logo" width="69" height="55.5" />
         </a>
-        <ul>
-          <li><a href="">About</a></li>
-          <li><a href="">Services and prices</a></li>
-          <li><a href="">Barbers</a></li>
-          <li><a href="">Contacts</a></li>
+        <ul class="header-list list">
+          <li><a class="header-link link current" href="">About</a></li>
+          <li><a class="header-link link" href="">Services and prices</a></li>
+          <li><a class="header-link link" href="">Barbers</a></li>
+          <li><a class="header-link link" href="">Contacts</a></li>
         </ul>
       </nav>
-      <a href="tel:+380441111111">+38 044 111 11 11</a>
-      <button type="button">Online-booking</button>
+      <a class="header-link link" href="tel:+380441111111">+38 044 111 11 11</a>
+      <button class="header-button button" type="button">Online-booking</button>
     </header>
 
     <main>
       <!-- Section Hero -->
-      <section>
-        <ul>
-          <li><a href="" target="_blank" rel="noopener noreferrer nofollow">Instagram</a></li>
-          <li><a href="" target="_blank" rel="noopener noreferrer nofollow">Youtube</a></li>
+      <section class="hero">
+        <ul class="hero-list list">
+          <li>
+            <a class="hero-link link" href="" target="_blank" rel="noopener noreferrer nofollow"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a class="hero-link link" href="" target="_blank" rel="noopener noreferrer nofollow"
+              >Youtube</a
+            >
+          </li>
         </ul>
-        <p>A hair salon for men in Kyiv</p>
-        <h1>BarberShop</h1>
-        <p>We are experts in trendy men’s haircuts. We work quickly, carefully and with style.</p>
+        <p class="hero-subtitle subtitle">A hair salon for men in Kyiv</p>
+        <h1 class="hero-title">BarberShop</h1>
+        <p class="hero-text">
+          We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
+        </p>
       </section>
 
       <!-- Section About -->
-      <section>
-        <ul>
+      <section class="about">
+        <ul class="about-list list">
           <li><img src="./images/image-1.jpg" alt="Shaving" width="270" height="445" /></li>
           <li><img src="./images/image-2.jpg" alt="Haircut" width="270" height="445" /></li>
         </ul>
-        <p>About</p>
-        <h2>Best Barbershop in your city</h2>
-        <p>If you want to add more confidence to your image, you should definitely visit us.</p>
-        <p>
+        <p class="about-subtitle subtitle">About</p>
+        <h2 class="about-title title">Best Barbershop in your city</h2>
+        <p class="about-text text">
+          If you want to add more confidence to your image, you should definitely visit us.
+        </p>
+        <p class="about-info">
           We are a team that never stops at what has been achieved and are thirsty for changes. And
           when you fall into the hands of our master, you will never be the same again. We are a
           team that is always "on the same wave" with clients. Therefore, we are always ready to
           improve everyone who comes to us!
         </p>
-        <button type="button">Online-booking</button>
+        <button class="about-button button" type="button">Online-booking</button>
       </section>
 
       <!-- Section Services and prices -->
-      <section>
-        <p>Spend your time with the best masters</p>
-        <h2>Services and prices</h2>
-        <ul>
+      <section class="services">
+        <p class="services-subtitle subtitle">Spend your time with the best masters</p>
+        <h2 class="services-title title">Services and prices</h2>
+        <ul class="services-list list">
           <li>
-            <ul>
+            <ul class="list">
               <li>
                 <p>Men’s haircut</p>
                 <p>from 300 uah.</p>
@@ -79,7 +98,7 @@
             </ul>
           </li>
           <li>
-            <ul>
+            <ul class="list">
               <li>
                 <p>Trainee’s haircut</p>
                 <p>from 50 uah.</p>
@@ -99,66 +118,65 @@
             </ul>
           </li>
         </ul>
-        <button type="button">Online-booking</button>
+        <button class="button" type="button">Online-booking</button>
       </section>
 
       <!-- Section Why people come to us -->
-      <section>
-        <ul>
+      <section class="reasons">
+        <ul class="reasons-list list">
           <li>
-            <span>600<sup>+</sup></span>
-            <p>Satisfied customers per day</p>
+            <p class="reasons-num">600<sup>+</sup></p>
+            <p class="reasons-description">Satisfied customers per day</p>
           </li>
           <li>
-            <span>50<sup>+</sup></span>
-            <p>Awards for excellent service</p>
+            <p class="reasons-num">50<sup>+</sup></p>
+            <p class="reasons-description">Awards for excellent service</p>
           </li>
           <li>
-            <span>20<sup>+</sup></span>
-            <p>SKyiv’s best barbers</p>
+            <p class="reasons-num">20<sup>+</sup></p>
+            <p class="reasons-description">SKyiv’s best barbers</p>
           </li>
           <li>
-            <span>100<sup>+</sup></span>
-            <p>Gifts for regular customers</p>
+            <p class="reasons-num">100<sup>+</sup></p>
+            <p class="reasons-description">Gifts for regular customers</p>
           </li>
         </ul>
-        <p>Old traditional school</p>
-        <h2>&iquestWhy people come to us?</h2>
-        <p>
+        <p class="reasons-subtitle subtitle">Old traditional school</p>
+        <h2 class="reasons-title title">&iquestWhy people come to us?</h2>
+        <p class="reasons-text text">
           Only good things are said about us. But it's better to see and feel 1 time than read 10
           times.
         </p>
       </section>
 
       <!-- Section Our barbers -->
-      <section>
-        <p>For true enjoyers of the atmosphere</p>
-        <h2>Our barbers</h2>
-        <ul>
+      <section class="barbers">
+        <p class="barbers-subtitle subtitle">For true enjoyers of the atmosphere</p>
+        <h2 class="barbers-title title">Our barbers</h2>
+        <ul class="barbers-list list">
           <li>
             <img src="./images/john.jpg" alt="John Smith photo" width="370" height="346" />
-            <h3>John Smith</h3>
-            <p>Extreme Barber</p>
-            <ul></ul>
+            <h3 class="barbers-name">John Smith</h3>
+            <p class="barbers-description">Extreme Barber</p>
           </li>
           <li>
             <img src="./images/michele.jpg" alt="Michele Doe photo" width="370" height="346" />
-            <h3>Michele Doe</h3>
-            <p>Extreme Barber</p>
+            <h3 class="barbers-name">Michele Doe</h3>
+            <p class="barbers-description">Extreme Barber</p>
           </li>
           <li>
             <img src="./images/alan.jpg" alt="Alan Black photo" width="370" height="346" />
-            <h3>Alan Black</h3>
-            <p>Extreme Barber</p>
+            <h3 class="barbers-name">Alan Black</h3>
+            <p class="barbers-description">Extreme Barber</p>
           </li>
         </ul>
       </section>
 
       <!-- Section  Portfolio -->
-      <section>
-        <h2 class="hidden">Portfolio</h2>
-        <p>In Latin, "barba" means "beard"</p>
-        <ul>
+      <section class="portfolio">
+        <h2 class="visually-hidden">Portfolio</h2>
+        <p class="portfolio-subtitle subtitle">In Latin, "barba" means "beard"</p>
+        <ul class="portfolio-list list">
           <li>
             <img src="./images/sample1.jpg" alt="Sample of our work" width="270" height="360" />
           </li>
@@ -181,32 +199,45 @@
       </section>
 
       <!-- Section Contacts -->
-      <section>
-        <h2>Contacts</h2>
-        <address>
-          <ul>
+      <section class="contacts">
+        <h2 class="contacts-title title">Contacts</h2>
+        <address class="contacts-address">
+          <ul class="contacts-list list">
             <li>
               <a
+                class="contacts-location link"
                 href="https://goo.gl/maps/ox9ZBiSxC9ph9mJ77"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 >st. Vasilkovaya, 7A Kiev, 08132</a
               >
             </li>
-            <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
-            <li><a href="mailto:barbershop@email.com">barbershop@email.com</a></li>
+            <li><a class="contacts-link link" href="tel:+380441111111">+38 044 111 11 11</a></li>
+            <li>
+              <a class="contacts-link link underlined" href="mailto:barbershop@email.com"
+                >barbershop@email.com</a
+              >
+            </li>
           </ul>
         </address>
-        <p>Working hours</p>
-        <p>Every day from 9:00 to 22:00</p>
+        <p class="contacts-subtitle subtitle">Working hours</p>
+        <p class="contacts-text text">Every day from 9:00 to 22:00</p>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; Copyright 2020</p>
-      <ul>
-        <li><a target="_blank" rel="noopener noreferrer nofollow">Instagram</a></li>
-        <li><a target="_blank" rel="noopener noreferrer nofollow">Youtube</a></li>
+    <footer class="footer">
+      <p class="footer-copy">&copy; Copyright 2020</p>
+      <ul class="footer-list list">
+        <li>
+          <a class="footer-link link" href="" target="_blank" rel="noopener noreferrer nofollow"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a class="footer-link link" href="" target="_blank" rel="noopener noreferrer nofollow"
+            >Youtube</a
+          >
+        </li>
       </ul>
     </footer>
   </body>

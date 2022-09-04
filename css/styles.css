@@ -1,0 +1,242 @@
+:root{
+	--primary-color:#9DA4BD;
+	--secondary-color: #555555;
+	--tertiary-color: #FFFFFF;
+	--quaternary-color: #303030;
+	--extra-color: rgba(157, 164, 189, 0.6);
+	--accent-color: #FF6C00; 
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	color: var(--primary-color);
+}
+
+.list{
+	list-style: none;
+}
+.link{
+	text-decoration: none;
+}
+.title{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 1.17;
+	letter-spacing: 0.05em;
+	color: var(--quaternary-color);
+}
+.subtitle{
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	text-transform: uppercase;
+	color: var(--extra-color);
+}
+.text{
+	font-size: 18px;
+	line-height: 1.67;
+	letter-spacing: 0.02em;
+	color: var(--secondary-color);
+}
+.button{
+	font-family: inherit;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+	color: var(--tertiary-color);
+	background-color: transparent;
+	border: 1px solid var(--accent-color);
+	border-radius: 25px;
+	cursor: pointer;
+}
+.button:hover,
+.button:focus{
+	color: var(--accent-color);
+}
+
+/* header */
+.header{
+	background-color: rgba(0, 0, 0, 0.6)
+}
+.header-link{
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.1em;
+	color: var(--tertiary-color);
+}
+.link:hover,
+.link:focus,
+.current{
+	color: var(--accent-color);
+}
+
+
+/*  Section Hero */
+.hero{
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.hero-link{
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	letter-spacing: 0.2em;
+	color: var(--quaternary-color);
+}
+.hero-info{
+}
+.hero-title{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 72px;
+	line-height: 1.18;
+	letter-spacing: 0.05em;
+	color: var(--tertiary-color);
+}
+.hero-text{
+	font-size: 18px;
+	line-height: 1.67;
+	letter-spacing: 0.02em;
+	color: var(--primary-color);
+}
+
+/* Section About */
+.about-subtitle{
+	color: var(--quaternary-color);
+}
+.about-title{}
+.about-text{
+	
+}
+.about-info{
+	font-size: 14px;
+	line-height: 1.86;
+	letter-spacing: 0.02em;
+	color: var(--secondary-color);
+}
+.about-button{
+	color: var(--quaternary-color);
+}
+
+/* Section Services and prices  */
+.services{
+	background-color: rgba(0, 0, 0, 0.6);
+	font-size: 18px;
+	line-height: 1.67;
+	letter-spacing: 0.02em;
+}
+.services-subtitle{
+	color: var(--extra-color); 
+}
+.services-title{
+	color: var(--tertiary-color);
+}
+
+/* Section Why people come to us */
+.reasons-num{
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.05em;
+	color: var(--quaternary-color);
+}
+.reasons-num > sup{
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.38;
+	text-align: center;
+	color: var(--accent-color);
+}
+.reasons-description{
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	text-align: center;
+	color: var(--quaternary-color);
+}
+.reasons-subtitle{
+	color: var(--quaternary-color);
+}
+
+/* Section Our barbers */
+.barbers-subtitle{
+	color: var(--quaternary-color);
+}
+.barbers-name{
+	font-size: 18px;
+	line-height: 1.39;
+	text-align: center;
+	letter-spacing: 0.02em;
+	color: var(--quaternary-color);
+}
+.barbers-description{
+	font-size: 14px;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.02em;
+	color: var(--accent-color);
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* Section  Portfolio */
+.portfolio-subtitle{
+	color: var(--quaternary-color);
+}
+
+/* Section Contacts  */
+.contacts{
+	background-color: rgba(0, 0, 0, 0.6);
+	font-size: 18px;
+	line-height: 1.67;
+	letter-spacing: 0.02em;
+}
+.contacts-title{
+	color: var(--tertiary-color);
+}
+.contacts-address{
+	font-style: normal;
+}
+.contacts-location{
+	font-weight: 700;
+	color: var(--primary-color);
+}
+.contacts-link{
+	color: var(--primary-color);	
+}
+.underlined{
+	text-decoration: underline;
+}
+.contacts-subtitle{
+	color: var(--tertiary-color);
+}
+.contacts-text{
+	color: var(--primary-color);
+}
+
+/* foooter */
+.footer{
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	letter-spacing: 0.2em;
+}
+.footer-copy{;
+}
+.footer-list{
+	color: var(--quaternary-color);
+}
