@@ -1,184 +1,328 @@
-:root{
-	--primary-color:#9DA4BD;
-	--secondary-color: #555555;
-	--tertiary-color: #FFFFFF;
-	--quaternary-color: #303030;
-	--extra-color: rgba(157, 164, 189, 0.6);
-	--accent-color: #FF6C00; 
+:root {
+  --primary-color: #9da4bd;
+  --secondary-color: #555555;
+  --tertiary-color: #ffffff;
+  --quaternary-color: #303030;
+  --extra-color: rgba(157, 164, 189, 0.6);
+  --accent-color: #ff6c00;
 }
 
-body{
-	font-family: 'Open Sans', sans-serif;
-	color: var(--primary-color);
+/** Reset styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  font-family: inherit;
+}
+img {
+  display: block;
 }
 
-.list{
-	list-style: none;
-}
-.link{
-	text-decoration: none;
-}
-.title{
-	font-family: 'Raleway', sans-serif;
-	font-weight: 700;
-	font-size: 42px;
-	line-height: 1.17;
-	letter-spacing: 0.05em;
-	color: var(--quaternary-color);
-}
-.subtitle{
-	font-weight: 600;
-	font-size: 11px;
-	line-height: 1.36;
-	text-transform: uppercase;
-	color: var(--extra-color);
-}
-.text{
-	font-size: 18px;
-	line-height: 1.67;
-	letter-spacing: 0.02em;
-	color: var(--secondary-color);
-}
-.button{
-	font-family: inherit;
-	font-weight: 600;
-	font-size: 12px;
-	line-height: 1.33;
-	letter-spacing: 0.09em;
-	text-transform: uppercase;
-	color: var(--tertiary-color);
-	background-color: transparent;
-	border: 1px solid var(--accent-color);
-	border-radius: 25px;
-	cursor: pointer;
-}
-.button:hover,
-.button:focus{
-	color: var(--accent-color);
+/** General styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--primary-color);
 }
 
-/* header */
-.header{
-	background-color: rgba(0, 0, 0, 0.6)
-}
-.header-link{
-	font-weight: 600;
-	font-size: 12px;
-	line-height: 1.33;
-	letter-spacing: 0.1em;
-	color: var(--tertiary-color);
-}
-.link:hover,
-.link:focus,
-.current{
-	color: var(--accent-color);
+.btn {
+  padding: 12px 20px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+
+  text-transform: uppercase;
+  color: var(--tertiary-color);
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+
+  cursor: pointer;
 }
 
-
-/*  Section Hero */
-.hero{
-	background-color: rgba(0, 0, 0, 0.6);
-}
-.hero-link{
-	font-weight: 600;
-	font-size: 11px;
-	line-height: 1.36;
-	letter-spacing: 0.2em;
-	color: var(--quaternary-color);
-}
-.hero-info{
-}
-.hero-title{
-	font-family: 'Raleway', sans-serif;
-	font-weight: 700;
-	font-size: 72px;
-	line-height: 1.18;
-	letter-spacing: 0.05em;
-	color: var(--tertiary-color);
-}
-.hero-text{
-	font-size: 18px;
-	line-height: 1.67;
-	letter-spacing: 0.02em;
-	color: var(--primary-color);
+.btn:hover,
+.btn:focus {
+  color: var(--accent-color);
 }
 
-/* Section About */
-.about-subtitle{
-	color: var(--quaternary-color);
-}
-.about-title{}
-.about-text{
-	
-}
-.about-info{
-	font-size: 14px;
-	line-height: 1.86;
-	letter-spacing: 0.02em;
-	color: var(--secondary-color);
-}
-.about-button{
-	color: var(--quaternary-color);
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
 }
 
-/* Section Services and prices  */
-.services{
-	background-color: rgba(0, 0, 0, 0.6);
-	font-size: 18px;
-	line-height: 1.67;
-	letter-spacing: 0.02em;
-}
-.services-subtitle{
-	color: var(--extra-color); 
-}
-.services-title{
-	color: var(--tertiary-color);
+.title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--quaternary-color);
 }
 
+.subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--extra-color);
+}
+
+.text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/** header */
+.header {
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 31px;
+}
+
+.header-content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding: 40px 20px 0 100px;
+
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.header-nav {
+  margin-right: auto;
+}
+
+.header-list {
+  display: flex;
+  column-gap: 30px;
+}
+
+.header-link {
+  margin-right: 40px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--tertiary-color);
+}
+
+.header-link:hover,
+.header-link:focus,
+.current {
+  color: var(--accent-color);
+}
+
+/**  Section Hero */
+.hero {
+}
+
+.hero-container {
+  display: flex;
+}
+
+.hero-list {
+  width: 100px;
+}
+
+.hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--quaternary-color);
+}
+
+.hero-wrapper {
+  flex-grow: 1;
+  padding: 272px 0 208px 100px;
+
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-subtitle {
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  margin-bottom: 20px;
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--tertiary-color);
+}
+
+.hero-text {
+  max-width: 358px;
+
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+/** Section About */
+.about-container {
+  display: flex;
+  column-gap: 30px;
+}
+
+.about-list {
+  display: flex;
+  column-gap: 30px;
+}
+
+.about-wrapper {
+  padding-right: 100px;
+}
+
+.about-subtitle {
+  margin-bottom: 20px;
+  color: var(--quaternary-color);
+}
+
+.about-title {
+  margin-bottom: 20px;
+}
+
+.about-text {
+  margin-bottom: 20px;
+}
+
+.about-info {
+  margin-bottom: 42px;
+
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
+
+.about-btn {
+  color: var(--quaternary-color);
+}
+
+/** Section Services and prices  */
+.services {
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.services-container {
+}
+
+.services-subtitle {
+  margin-bottom: 20px;
+
+  color: var(--extra-color);
+}
+.services-title {
+  margin-bottom: 44px;
+  color: var(--tertiary-color);
+}
+
+.services-list {
+  margin-bottom: 44px;
+  display: flex;
+  column-gap: 30px;
+}
+
+.services-list > .list-item {
+  flex-basis: 50%;
+  padding: 30px 22px 30px 20px;
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
+.services-sublist > .list-item {
+  display: flex;
+  align-items: baseline;
+}
+
+.list-item > span {
+  flex-grow: 1;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.services-btn {
+  display: block;
+  margin: 0 auto;
+}
 /* Section Why people come to us */
-.reasons-num{
-	font-weight: 700;
-	font-size: 42px;
-	line-height: 1.36;
-	text-align: center;
-	letter-spacing: 0.05em;
-	color: var(--quaternary-color);
+.reasons-num {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--quaternary-color);
 }
-.reasons-num > sup{
-	font-weight: 600;
-	font-size: 16px;
-	line-height: 1.38;
-	text-align: center;
-	color: var(--accent-color);
+.reasons-num > sup {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: center;
+  color: var(--accent-color);
 }
-.reasons-description{
-	font-weight: 600;
-	font-size: 11px;
-	line-height: 1.36;
-	text-align: center;
-	color: var(--quaternary-color);
+.reasons-description {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--quaternary-color);
 }
-.reasons-subtitle{
-	color: var(--quaternary-color);
+.reasons-subtitle {
+  color: var(--quaternary-color);
 }
 
 /* Section Our barbers */
-.barbers-subtitle{
-	color: var(--quaternary-color);
+.barbers-subtitle {
+  color: var(--quaternary-color);
 }
-.barbers-name{
-	font-size: 18px;
-	line-height: 1.39;
-	text-align: center;
-	letter-spacing: 0.02em;
-	color: var(--quaternary-color);
+.barbers-name {
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--quaternary-color);
 }
-.barbers-description{
-	font-size: 14px;
-	line-height: 1.36;
-	text-align: center;
-	letter-spacing: 0.02em;
-	color: var(--accent-color);
+.barbers-description {
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
 .visually-hidden {
   position: absolute;
@@ -194,49 +338,49 @@ body{
 }
 
 /* Section  Portfolio */
-.portfolio-subtitle{
-	color: var(--quaternary-color);
+.portfolio-subtitle {
+  color: var(--quaternary-color);
 }
 
 /* Section Contacts  */
-.contacts{
-	background-color: rgba(0, 0, 0, 0.6);
-	font-size: 18px;
-	line-height: 1.67;
-	letter-spacing: 0.02em;
+.contacts {
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
 }
-.contacts-title{
-	color: var(--tertiary-color);
+.contacts-title {
+  color: var(--tertiary-color);
 }
-.contacts-address{
-	font-style: normal;
+.contacts-address {
+  font-style: normal;
 }
-.contacts-location{
-	font-weight: 700;
-	color: var(--primary-color);
+.contacts-location {
+  font-weight: 700;
+  color: var(--primary-color);
 }
-.contacts-link{
-	color: var(--primary-color);	
+.contacts-link {
+  color: var(--primary-color);
 }
-.underlined{
-	text-decoration: underline;
+.underlined {
+  text-decoration: underline;
 }
-.contacts-subtitle{
-	color: var(--tertiary-color);
+.contacts-subtitle {
+  color: var(--tertiary-color);
 }
-.contacts-text{
-	color: var(--primary-color);
+.contacts-text {
+  color: var(--primary-color);
 }
 
 /* foooter */
-.footer{
-	font-weight: 600;
-	font-size: 11px;
-	line-height: 1.36;
-	letter-spacing: 0.2em;
+.footer {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
 }
-.footer-copy{;
+.footer-copy {
 }
-.footer-list{
-	color: var(--quaternary-color);
+.footer-list {
+  color: var(--quaternary-color);
 }
