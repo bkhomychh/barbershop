@@ -557,12 +557,18 @@ body {
 .contacts-link {
   max-width: 270px;
   display: flex;
-  gap: 16px;
+  align-items: center;
+  gap: 20px;
 }
 
 .contacts-link > svg {
+  height: 30px;
   stroke: currentColor;
   flex-shrink: 0;
+}
+
+.contacts-item:first-child svg {
+  align-self: flex-start;
 }
 
 .underlined {
@@ -592,7 +598,7 @@ body {
 }
 
 .footer > .container {
-  padding: 56px 0;
+  padding: 56px 15px;
   display: flex;
   justify-content: space-between;
 }
