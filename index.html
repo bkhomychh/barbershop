@@ -24,30 +24,34 @@
     <!-- Header -->
     <header class="header">
       <div class="header-container container">
-        <a class="header-logo" href="./index.html">
-          <svg width="69" height="55">
-            <use href="./images/sprite.svg#icon-logo"></use>
-          </svg>
-        </a>
-        <div class="header-content">
-          <nav class="header-nav">
-            <ul class="header-list list">
-              <li class="header-item">
-                <a class="header-link link" href="#about">About</a>
-              </li>
-              <li class="header-item">
-                <a class="header-link link" href="#services">Services and prices</a>
-              </li>
-              <li class="header-item">
-                <a class="header-link link" href="#barbers">Barbers</a>
-              </li>
-              <li class="header-item">
-                <a class="header-link link" href="#contacts">Contacts</a>
-              </li>
-            </ul>
-          </nav>
-          <a class="header-link link" href="tel:+380441111111">+38 044 111 11 11</a>
-          <button class="header-btn btn" type="button">Online-booking</button>
+        <div class="header-wrap">
+          <a class="header-logo" href="./index.html">
+            <svg width="69" height="55">
+              <use href="./images/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+
+          <div class="header-content">
+            <nav class="header-nav">
+              <ul class="header-list list">
+                <li class="header-item">
+                  <a class="header-link link" href="#about">About</a>
+                </li>
+                <li class="header-item">
+                  <a class="header-link link" href="#services">Services and prices</a>
+                </li>
+                <li class="header-item">
+                  <a class="header-link link" href="#barbers">Barbers</a>
+                </li>
+                <li class="header-item">
+                  <a class="header-link link" href="#contacts">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+
+            <a class="header-link link" href="tel:+380441111111">+38 044 111 11 11</a>
+            <a class="header-btn btn" href="#booking">Online-booking</a>
+          </div>
         </div>
       </div>
     </header>
@@ -56,18 +60,29 @@
       <!-- Hero -->
       <section class="hero">
         <div class="hero-container container">
-          <ul class="hero-list">
-            <li>
-              <a class="hero-link link" href="" target="_blank" rel="noopener noreferrer nofollow"
-                >Instagram</a
-              >
-            </li>
-            <li>
-              <a class="hero-link link" href="" target="_blank" rel="noopener noreferrer nofollow"
-                >Youtube</a
-              >
-            </li>
-          </ul>
+          <div class="hero-box">
+            <ul class="hero-list links-list">
+              <li>
+                <a
+                  class="hero-link link"
+                  href="./index.html"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hero-link link"
+                  href="./index.html"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+
           <div class="hero-wrapper">
             <p class="hero-subtitle subtitle">A hair salon for men in Kyiv</p>
             <h1 class="hero-title">BarberShop</h1>
@@ -97,7 +112,7 @@
               are a team that is always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button class="about-btn btn" type="button">Online-booking</button>
+            <a class="about-btn btn" href="#booking">Online-booking</a>
           </div>
         </div>
       </section>
@@ -149,7 +164,7 @@
               </ul>
             </li>
           </ul>
-          <button class="services-btn btn" type="button">Online-booking</button>
+          <a class="services-btn btn" href="#booking">Online-booking</a>
         </div>
       </section>
 
@@ -369,7 +384,7 @@
 
       <!-- Online-booking -->
       <div class="wrapper">
-        <section class="booking">
+        <section class="booking" id="booking">
           <h2 class="booking-title title">Online-booking</h2>
           <!-- TODO: form -->
           <button class="btn">Send</button>
@@ -421,7 +436,7 @@
     <footer class="footer">
       <div class="container">
         <p class="footer-copy">&copy; Copyright 2020</p>
-        <ul class="footer-list list">
+        <ul class="footer-list links-list">
           <li>
             <a class="footer-link link" href="" target="_blank" rel="noopener noreferrer nofollow"
               >Instagram</a
