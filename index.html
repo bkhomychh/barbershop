@@ -382,53 +382,59 @@
         </div>
       </section>
 
-      <!-- Online-booking -->
       <div class="wrapper">
-        <section class="booking" id="booking">
-          <h2 class="booking-title title">Online-booking</h2>
-          <!-- TODO: form -->
-          <button class="btn">Send</button>
-        </section>
+        <div class="container">
+          <!-- Online-booking -->
+          <section class="booking" id="booking">
+            <h2 class="booking-title title">Online-booking</h2>
+            <form class="booking-form form" autocomplete="off">
+              <input class="form-item" type="text" name="name" placeholder="Name*" required />
+              <input class="form-item" type="tel" name="tel" placeholder="Phone*" required />
+              <textarea class="form-item" name="message" placeholder="Message"></textarea>
+              <button class="btn form-btn" type="submit">Send</button>
+            </form>
+          </section>
 
-        <!-- Contacts -->
-        <section class="contacts" id="contacts">
-          <h2 class="contacts-title title">Contacts</h2>
-          <address class="contacts-address">
-            <ul class="contacts-list list">
-              <li class="contacts-item">
-                <a
-                  class="contacts-link link"
-                  href="https://goo.gl/maps/ox9ZBiSxC9ph9mJ77"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                >
-                  <svg width="24" height="24">
-                    <use href="./images/sprite.svg#icon-location"></use>
-                  </svg>
-                  st. Vasilkovaya, 7A Kiev, 08132
-                </a>
-              </li>
-              <li class="contacts-item">
-                <a class="contacts-link link" href="tel:+380441111111">
-                  <svg width="24" height="24">
-                    <use href="./images/sprite.svg#icon-phone"></use>
-                  </svg>
-                  +38 044 111 11 11</a
-                >
-              </li>
-              <li class="contacts-item">
-                <a class="contacts-link link underlined" href="mailto:barbershop@email.com">
-                  <svg width="24" height="24">
-                    <use href="./images/sprite.svg#icon-mail"></use>
-                  </svg>
-                  barbershop@email.com</a
-                >
-              </li>
-            </ul>
-          </address>
-          <p class="contacts-subtitle subtitle">Working hours</p>
-          <p class="contacts-text text">Every day from 9:00 to 22:00</p>
-        </section>
+          <!-- Contacts -->
+          <section class="contacts" id="contacts">
+            <h2 class="contacts-title title">Contacts</h2>
+            <address class="contacts-address">
+              <ul class="contacts-list list">
+                <li class="contacts-item">
+                  <a
+                    class="contacts-link link"
+                    href="https://goo.gl/maps/ox9ZBiSxC9ph9mJ77"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    <svg width="24" height="24">
+                      <use href="./images/sprite.svg#icon-location"></use>
+                    </svg>
+                    st. Vasilkovaya, 7A Kiev, 08132
+                  </a>
+                </li>
+                <li class="contacts-item">
+                  <a class="contacts-link link" href="tel:+380441111111">
+                    <svg width="24" height="24">
+                      <use href="./images/sprite.svg#icon-phone"></use>
+                    </svg>
+                    +38 044 111 11 11</a
+                  >
+                </li>
+                <li class="contacts-item">
+                  <a class="contacts-link link underlined" href="mailto:barbershop@email.com">
+                    <svg width="24" height="24">
+                      <use href="./images/sprite.svg#icon-mail"></use>
+                    </svg>
+                    barbershop@email.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <p class="contacts-subtitle subtitle">Working hours</p>
+            <p class="contacts-text text">Every day from 9:00 to 22:00</p>
+          </section>
+        </div>
       </div>
     </main>
 

@@ -562,17 +562,24 @@ body {
   object-fit: cover;
 }
 
-/*! Online-booking */
 .wrapper {
   max-width: 1600px;
   margin: 0 auto;
-  display: flex;
   background-color: var(--secondary-bg-color);
+  background-image: url(../images/bg/contacts.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 50% 100%;
+}
+.wrapper > .container {
+  display: flex;
 }
 
+/*! Online-booking */
 .booking {
   flex-basis: 50%;
-  padding: 130px 0 0 216px;
+  padding-top: 130px;
+  padding-right: 30px;
 }
 
 .booking-title {
@@ -580,16 +587,54 @@ body {
   color: var(--tertiary-color);
 }
 
+.booking-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 44px 30px;
+}
+
+.form-item {
+  flex-basis: calc((100% - 30px) / 2);
+  padding-bottom: 8px;
+  height: 24px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--extra-color);
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--extra-color);
+  outline: none;
+}
+
+.form-item::placeholder {
+  color: var(--extra-color);
+}
+
+.form-item:focus,
+.form-item:focus::placeholder {
+  color: var(--tertiary-color);
+  border-color: var(--tertiary-color);
+}
+
+textarea.form-item {
+  flex-basis: 100%;
+  height: 76px;
+
+  resize: none;
+}
+
 /*! Contacts */
 .contacts {
-  padding: 130px 0 120px 100px;
   flex-basis: 50%;
-
+  padding: 130px 0 120px 100px;
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
-  background-image: url(../images/bg/contacts.png);
-  background-repeat: no-repeat;
 }
 
 .contacts-title {
@@ -601,11 +646,11 @@ body {
   font-style: normal;
 }
 
+.contacts-list {
+  margin-bottom: 70px;
+}
 .contacts-item:not(:last-child) {
   margin-bottom: 20px;
-}
-.contacts-item:last-child {
-  margin-bottom: 70px;
 }
 
 .contacts-item:first-child > .contacts-link {
