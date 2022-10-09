@@ -1,0 +1,21 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.socials__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  color: var(--quaternary-color);
+  background-color: var(--tertiary-color);
+}
+
+.socials__icon {
+  fill: currentColor;
+}

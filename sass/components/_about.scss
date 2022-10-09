@@ -1,0 +1,37 @@
+.about {
+}
+
+.about__container {
+  display: flex;
+  column-gap: 30px;
+}
+
+.about__list {
+  display: flex;
+  column-gap: var(--gap-size);
+}
+
+.about__wrap {
+  padding-right: 100px;
+}
+
+.about__title {
+  margin-bottom: 20px;
+}
+
+.about__subtitle {
+  margin-bottom: 20px;
+}
+
+.about__text {
+  margin-bottom: 20px;
+}
+
+.about__info {
+  margin-bottom: 42px;
+
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}

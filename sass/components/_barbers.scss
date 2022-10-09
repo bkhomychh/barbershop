@@ -1,0 +1,44 @@
+.barbers {
+  background-color: var(--primary-bg-color);
+}
+
+.barbers__subtitle {
+  margin-bottom: 20px;
+}
+.barbers__title {
+  margin-bottom: 44px;
+}
+
+.barbers__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-size);
+}
+
+.barbers__item {
+  flex-basis: calc((100% - (var(--gap-size) * (var(--image-amount) - 1))) / var(--image-amount));
+}
+
+.barbers__img {
+  width: 100%;
+  margin-bottom: 30px;
+  object-fit: cover;
+}
+
+.barbers__name {
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--quaternary-color);
+}
+
+.barbers__desc {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}

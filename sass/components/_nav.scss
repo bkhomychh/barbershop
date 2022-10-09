@@ -1,0 +1,8 @@
+.nav {
+  margin-right: auto;
+}
+
+.nav__list {
+  display: flex;
+  column-gap: var(--gap-size);
+}

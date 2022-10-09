@@ -1,0 +1,40 @@
+.header {
+}
+
+.header__container {
+  position: relative;
+  z-index: 100;
+}
+
+.header__wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  padding: 32px 35px 0 0;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: 31px;
+}
+
+.header__content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 20px 0 100px;
+}
+
+.header__link {
+  margin-right: 40px;
+  padding: 7px 0;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--tertiary-color);
+}

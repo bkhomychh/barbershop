@@ -1,0 +1,13 @@
+.connection {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: var(--secondary-bg-color);
+  background-image: url(../images/bg/contacts.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 50% 100%;
+}
+
+.connection__container {
+  display: flex;
+}

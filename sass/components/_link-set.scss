@@ -1,0 +1,24 @@
+.link-set {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--quaternary-color);
+
+  &::before {
+    content: '';
+
+    width: 60px;
+    height: 1px;
+
+    background-color: currentColor;
+  }
+}
+
+.link-set__link {
+  padding: 7px 0;
+}

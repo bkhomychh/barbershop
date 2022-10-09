@@ -1,0 +1,26 @@
+.subtitle {
+  display: flex;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--extra-color);
+
+  &--dark {
+    color: var(--quaternary-color);
+  }
+
+  &--light {
+    color: var(--tertiary-color);
+  }
+
+  &::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+    background-color: currentColor;
+  }
+}

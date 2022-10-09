@@ -1,0 +1,16 @@
+.link {
+  transition: color var(--transition-duration) var(--transition-cubic-bezier);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &--bold {
+    font-weight: 700;
+  }
+
+  &--underlined {
+    text-decoration: underline;
+  }
+}

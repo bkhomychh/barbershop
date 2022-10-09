@@ -1,0 +1,22 @@
+.portfolio {
+}
+
+.portfolio__subtitle {
+  margin-bottom: 44px;
+}
+
+.portfolio__list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: var(--gap-size);
+}
+
+.portfolio__item {
+  --image-amount: 4;
+  flex-basis: calc((100% - (var(--gap-size) * (var(--image-amount) - 1))) / var(--image-amount));
+}
+
+.portfolio__img {
+  width: 100%;
+  object-fit: cover;
+}
