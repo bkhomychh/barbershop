@@ -13,10 +13,11 @@
 
   width: 100%;
   padding: 40px 31px 0;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  overflow: hidden;
 }
 
 .header__logo {

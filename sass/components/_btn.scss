@@ -1,13 +1,10 @@
 .btn {
-  width: 160px;
-  height: 40px;
+  padding: 11px 19px;
+  min-width: 160px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-weight: 600;
   font-size: 12px;
-  line-height: 1.33;
+  line-height: (16 / 12);
   letter-spacing: 0.09em;
 
   text-transform: uppercase;
@@ -29,5 +26,15 @@
 
   &--dark {
     color: var(--quaternary-color);
+  }
+
+  &--flexible {
+    padding: 11px 36px;
+  }
+
+  &--centered {
+    display: flex;
+    margin: 0 auto;
+    width: max-content;
   }
 }

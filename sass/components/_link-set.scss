@@ -19,6 +19,12 @@
   }
 }
 
+.link-set--col {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
 .link-set__link {
   padding: 7px 0;
 }

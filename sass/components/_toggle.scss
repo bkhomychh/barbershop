@@ -1,5 +1,9 @@
 .toggle {
   color: var(--tertiary-color);
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .toggle__icon {
