@@ -1,15 +1,29 @@
 .hero {
 }
+
 .hero__container {
   z-index: -1;
   display: flex;
+
+  padding: 208px 113px 209px 31px;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+    url(../images/bg/slider/slider-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero__wrap {
+  display: none;
   position: relative;
 
-  flex-basis: 100px;
-  flex-grow: 0;
+  @include tablet {
+    display: block;
+    flex-basis: 100px;
+    flex-grow: 0;
+  }
 }
 
 .hero__list {
@@ -22,15 +36,10 @@
 }
 
 .hero__content {
-  flex-grow: 1;
-  padding: 272px 0 208px 100px;
-
-  background-color: rgba(0, 0, 0, 0.6);
-  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
-    url(../images/bg/slider/slider-1.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  @include tablet {
+    flex-grow: 1;
+    padding: 272px 0 208px 100px;
+  }
 }
 
 .hero__title {
@@ -38,16 +47,27 @@
 
   font-family: $secondary-font-family;
   font-weight: 700;
-  font-size: 72px;
+
+  font-size: 48px;
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--tertiary-color);
+
+  @include desktop {
+    font-size: 72px;
+  }
 }
 
 .hero__text {
-  max-width: 358px;
+  max-width: 336px;
 
-  font-size: 18px;
-  line-height: 1.67;
+  font-size: 16px;
+  line-height: (26 / 16);
   letter-spacing: 0.02em;
+
+  @include desktop {
+    max-width: 358px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
 }

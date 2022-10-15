@@ -7,16 +7,28 @@
 }
 
 .about__list {
-  display: flex;
-  column-gap: var(--gap-size);
+  display: none;
+
+  @include tablet {
+    display: flex;
+    column-gap: var(--gap-size);
+  }
 }
 
 .about__wrap {
-  padding-right: 100px;
+  @include desktop {
+    padding-right: 100px;
+  }
 }
 
 .about__title {
+  max-width: 306px;
   margin-bottom: 20px;
+  font-size: 28px;
+
+  @include desktop {
+    font-size: 42px;
+  }
 }
 
 .about__subtitle {
@@ -28,10 +40,14 @@
 }
 
 .about__info {
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
+
+  @include desktop {
+    margin-bottom: 42px;
+  }
 }

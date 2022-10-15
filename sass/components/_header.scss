@@ -12,20 +12,31 @@
   left: 0;
 
   width: 100%;
-  padding: 32px 35px 0 0;
+  padding: 40px 31px 0;
+
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 .header__logo {
-  margin-right: 31px;
+  fill: var(--tertiary-color);
+
+  @include tablet {
+    margin-right: 31px;
+    fill: var(--quaternary-color);
+  }
 }
 
 .header__content {
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  padding: 0 20px 0 100px;
+  display: none;
+
+  @include tablet {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 20px 0 100px;
+  }
 }
 
 .header__link {

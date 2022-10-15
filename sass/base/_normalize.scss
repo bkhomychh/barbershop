@@ -299,8 +299,11 @@ a {
 button {
   font-family: inherit;
   border: none;
+  background-color: transparent;
 }
 
 img {
+  max-width: 100%;
+  height: auto;
   display: block;
 }

@@ -1,7 +1,20 @@
 .container {
   margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1200px;
+  padding: 0 31px;
+
+  @include mobile {
+    max-width: 480px;
+  }
+
+  @include tablet {
+    max-width: 768px;
+    padding: 0 39px;
+  }
+
+  @include desktop {
+    max-width: 1200px;
+    padding: 0 15px;
+  }
 }
 
 .visually-hidden {
@@ -18,13 +31,20 @@
 }
 
 .text {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
+
+  @include desktop {
+    font-size: 18px;
+  }
 }
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 84px 0;
+
+  @include desktop {
+    padding: 120px 0;
+  }
 }

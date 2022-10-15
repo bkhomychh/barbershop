@@ -2,14 +2,19 @@
   max-width: 1600px;
   margin: 0 auto;
 
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.67;
   letter-spacing: 0.02em;
+
   background-color: rgba(0, 0, 0, 0.6);
   background-image: url(../images/bg/services.png),
     linear-gradient(var(--gradient-color), var(--gradient-color));
   background-position: center;
   background-size: cover;
+
+  @include desktop {
+    font-size: 18px;
+  }
 }
 
 .services__subtitle {
@@ -18,24 +23,48 @@
 
 .services__title {
   margin-bottom: 44px;
+  font-size: 40px;
+
+  @include desktop {
+    font-size: 42px;
+  }
 }
 
 .services__sets {
   margin-bottom: 44px;
   display: flex;
-  column-gap: var(--gap-size);
+  flex-wrap: wrap;
+
+  $gap-size: 20px;
+  gap: $gap-size;
+
+  padding: 30px 20px 30px 40px;
+
+  background-image: linear-gradient(var(--first-item-gradient));
+
+  @include desktop {
+    $gap-size: 30px;
+    gap: $gap-size;
+
+    background: none;
+  }
 }
 
 .services__set {
-  flex-basis: calc((100% - 30px) / 2);
-  padding: 30px 22px 30px 20px;
+  width: 100%;
 
-  &:first-child {
-    background-image: linear-gradient(var(--first-item-gradient));
-  }
+  @include desktop {
+    padding: 30px 22px 30px 20px;
+    $item-amount: 2;
+    flex-basis: calc((100% - $gap-size * ($item-amount - 1)) / $item-amount);
 
-  &:last-child {
-    background-image: linear-gradient(var(--second-item-gradient));
+    &:first-child {
+      background-image: linear-gradient(var(--first-item-gradient));
+    }
+
+    &:last-child {
+      background-image: linear-gradient(var(--second-item-gradient));
+    }
   }
 }
 

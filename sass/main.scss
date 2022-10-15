@@ -1,11 +1,13 @@
 @import './base/normalize';
 @import './utils/variables';
+@import './utils/mixins';
 @import './utils/animations';
 
 @import './components/body';
 
 @import './utils/specific';
 @import './components/header';
+@import './components/toggle';
 @import './components/title';
 @import './components/subtitle';
 @import './components/btn';

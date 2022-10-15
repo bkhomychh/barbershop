@@ -9,5 +9,7 @@
 }
 
 .connection__container {
-  display: flex;
+  @include desktop {
+    display: flex;
+  }
 }
