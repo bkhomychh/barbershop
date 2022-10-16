@@ -24,13 +24,16 @@
   }
 }
 
+.backdrop__container {
+  position: relative;
+}
+
 .mobile-menu {
   position: absolute;
   top: 0;
   right: 0;
 
-  width: 70vw;
-  max-width: 450px;
+  max-width: 337px;
   height: 100vh;
   padding: 48px 31px 48px 40px;
 
@@ -61,4 +64,8 @@
   &:focus {
     color: var(--accent-color);
   }
+}
+
+.mobile-menu__link {
+  display: block;
 }

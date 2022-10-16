@@ -5,8 +5,6 @@
   z-index: -1;
   display: flex;
 
-  padding: 208px 113px 209px 31px;
-
   background-color: rgba(0, 0, 0, 0.6);
   background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
     url(../images/bg/slider/slider-1.jpg);
@@ -36,6 +34,8 @@
 }
 
 .hero__content {
+  padding: 208px 0 209px 0;
+
   @include tablet {
     flex-grow: 1;
     padding: 272px 0 208px 100px;
