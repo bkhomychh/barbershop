@@ -36,7 +36,7 @@
   letter-spacing: 0.02em;
   color: var(--secondary-color);
 
-  @include desktop {
+  @include tablet {
     font-size: 18px;
   }
 }
@@ -44,6 +44,9 @@
 .section {
   padding: 84px 0;
 
+  @include tablet {
+    padding: 100px 0;
+  }
   @include desktop {
     padding: 120px 0;
   }

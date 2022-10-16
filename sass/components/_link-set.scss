@@ -19,6 +19,14 @@
   }
 }
 
+.link-set--temporary {
+  display: none;
+
+  @include tablet {
+    display: flex;
+  }
+}
+
 .link-set--col {
   flex-wrap: wrap;
   justify-content: flex-end;

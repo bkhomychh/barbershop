@@ -10,12 +10,25 @@
   display: none;
 
   @include tablet {
+    $item-amount: 2;
+    flex-basis: calc((100% - ($item-amount - 1) * $gap-size) / $item-amount);
     display: flex;
-    column-gap: var(--gap-size);
+    flex-direction: column;
+    gap: $gap-size;
   }
 }
 
+.about__item {
+}
+
 .about__wrap {
+  @include tablet {
+    $item-amount: 2;
+    flex-basis: calc((100% - ($item-amount - 1) * $gap-size) / $item-amount);
+    display: flex;
+    flex-direction: column;
+  }
+
   @include desktop {
     padding-right: 100px;
   }
@@ -40,7 +53,7 @@
 }
 
 .about__info {
-  margin-bottom: 40px;
+  flex-grow: 1;
 
   font-size: 14px;
   line-height: 1.86;
@@ -50,4 +63,8 @@
   @include desktop {
     margin-bottom: 42px;
   }
+}
+
+.about__btn {
+  width: max-content;
 }

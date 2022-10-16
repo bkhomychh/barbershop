@@ -4,5 +4,9 @@
 
 .nav__list {
   display: flex;
-  column-gap: var(--gap-size);
+  column-gap: 16px;
+
+  @include desktop {
+    column-gap: 30px;
+  }
 }
