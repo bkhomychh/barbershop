@@ -6,6 +6,10 @@
 .booking__title {
   margin-bottom: 44px;
   text-align: center;
+
+  @include tablet {
+    text-align: start;
+  }
 }
 
 .booking__form {

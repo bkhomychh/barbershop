@@ -3,23 +3,31 @@
 
 .portfolio__subtitle {
   margin-bottom: 71px;
+
+  @include tablet {
+    margin-bottom: 44px;
+  }
 }
 
 .portfolio__list {
-  @include tablet {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: $gap-size;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap-size;
 }
 
 .portfolio__item {
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  $item-amount: 1;
+  flex-basis: calc((100% - ($gap-size * ($item-amount - 1))) / $item-amount);
+
+  @include tablet {
+    $item-amount: 2;
+    flex-basis: calc((100% - ($gap-size * ($item-amount - 1))) / $item-amount);
   }
 
-  $item-amount: 4;
-  flex-basis: calc((100% - ($gap-size * ($item-amount - 1))) / $item-amount);
+  @include desktop {
+    $item-amount: 2;
+    flex-basis: calc((100% - ($gap-size * ($item-amount - 1))) / $item-amount);
+  }
 }
 
 .portfolio__img {

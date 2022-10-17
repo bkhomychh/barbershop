@@ -29,12 +29,21 @@
 
   font-size: 18px;
   line-height: (30 / 18);
+
+  @include tablet {
+    max-width: 500px;
+  }
 }
 
 .reasons__list {
   display: flex;
   flex-wrap: wrap;
   gap: var(--gap-size);
+
+  @include tablet {
+    max-width: 450px;
+    margin-left: auto;
+  }
 
   @include desktop {
     flex-basis: 50%;
