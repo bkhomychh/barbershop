@@ -16,6 +16,10 @@
     flex-direction: column;
     gap: $gap-size;
   }
+
+  @include desktop {
+    flex-direction: row;
+  }
 }
 
 .about__item {
@@ -41,6 +45,7 @@
 
   @include desktop {
     font-size: 42px;
+    max-width: 100%;
   }
 }
 
@@ -60,8 +65,8 @@
   letter-spacing: 0.02em;
   color: var(--secondary-color);
 
-  @include desktop {
-    margin-bottom: 42px;
+  @media screen and (max-width: ($tablet - 1)) {
+    margin-bottom: 40px;
   }
 }
 

@@ -49,6 +49,7 @@
   @include desktop {
     $gap-size: 30px;
     gap: $gap-size;
+    padding: 0;
 
     background: none;
   }

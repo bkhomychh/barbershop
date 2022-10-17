@@ -7,6 +7,10 @@
   @include tablet {
     padding: 0 39px;
   }
+
+  @include desktop {
+    padding: 0 15px;
+  }
 }
 
 .hero__content {
@@ -58,5 +62,16 @@
     max-width: 358px;
     font-size: 18px;
     line-height: 1.67;
+  }
+}
+
+.hero__wrap {
+  display: none;
+  position: relative;
+
+  @include tablet {
+    display: block;
+    flex-basis: 100px;
+    flex-grow: 0;
   }
 }

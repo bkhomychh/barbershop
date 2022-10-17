@@ -21,6 +21,11 @@
     justify-content: flex-start;
     padding: 32px 59px 0 50px;
   }
+
+  @include desktop {
+    align-items: center;
+    padding: 40px 35px 0 15px;
+  }
 }
 
 .header__logo {
@@ -29,6 +34,10 @@
   @include tablet {
     margin-right: 60px;
     fill: var(--quaternary-color);
+  }
+
+  @include desktop {
+    margin-right: 131px;
   }
 }
 
@@ -54,14 +63,23 @@
   color: var(--tertiary-color);
 }
 
-.hero__wrap {
-  display: none;
-  position: relative;
+.header__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 
-  @include tablet {
-    display: block;
-    flex-basis: 100px;
-    flex-grow: 0;
+  gap: 20px;
+
+  @include desktop {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+.header__btn {
+  @include desktop {
+    order: 1;
   }
 }
 
@@ -74,14 +92,11 @@
     display: block;
 
     transform-origin: left bottom;
-    transform: rotateZ(-90deg) translate(-550px, 90px);
+    transform: rotateZ(-90deg) translate(-550px, 91px);
   }
-}
 
-.header__contacts {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-
-  gap: 20px;
+  @include desktop {
+    transform-origin: left bottom;
+    transform: rotateZ(-90deg) translate(-550px, 56px);
+  }
 }

@@ -1,6 +1,9 @@
 .booking {
   flex-basis: 50%;
-  padding: 84px 0;
+
+  @include desktop {
+    padding: 130px 0;
+  }
 }
 
 .booking__title {
@@ -16,4 +19,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 44px 30px;
+
+  @include desktop {
+    padding-right: 30px;
+  }
 }

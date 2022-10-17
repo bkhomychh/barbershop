@@ -11,7 +11,7 @@
 
 .barbers__list {
   @include desktop {
-    flex-wrap: wrap;
+    display: flex;
     gap: $gap-size;
   }
 }
@@ -21,17 +21,22 @@
   flex-direction: column;
   align-items: center;
 
-  &:not(:last-child) {
-    margin-bottom: 64px;
-  }
-
   @include tablet {
     $item-amount: 2;
     flex-basis: calc((100% - ($gap-size * ($item-amount - 1))) / $item-amount);
   }
+
   @include desktop {
-    $item-amount: 4;
+    $item-amount: 3;
     flex-basis: calc((100% - ($gap-size * ($item-amount - 1))) / $item-amount);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 64px;
+
+    @include desktop {
+      margin-bottom: 0;
+    }
   }
 }
 
