@@ -1,9 +1,9 @@
 .link {
-  transition: color var(--transition-duration) var(--transition-cubic-bezier);
+  transition: color $transition-duration $transition-cubic-bezier;
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 
   &--bold {

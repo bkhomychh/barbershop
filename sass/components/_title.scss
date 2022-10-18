@@ -4,9 +4,9 @@
   font-size: 42px;
   line-height: 1.17;
   letter-spacing: 0.05em;
-  color: var(--tertiary-color);
+  color: $tertiary-color;
 
   &--dark {
-    color: var(--quaternary-color);
+    color: $quaternary-color;
   }
 }

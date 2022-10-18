@@ -7,14 +7,14 @@
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
-  color: var(--extra-color);
+  color: $extra-color;
 
   &--dark {
-    color: var(--quaternary-color);
+    color: $quaternary-color;
   }
 
   &--light {
-    color: var(--tertiary-color);
+    color: $tertiary-color;
   }
 
   &::before {

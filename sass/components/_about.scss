@@ -63,7 +63,7 @@
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
-  color: var(--secondary-color);
+  color: $secondary-color;
 
   @media screen and (max-width: ($tablet - 1)) {
     margin-bottom: 40px;

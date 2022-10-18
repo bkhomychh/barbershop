@@ -1,7 +1,7 @@
 .connection {
   max-width: 1600px;
   margin: 0 auto;
-  background-color: var(--secondary-bg-color);
+  background-color: $secondary-bg-color;
   background-image: url(../images/contacts/contacts-bg-mob.png);
   background-repeat: no-repeat;
   background-position: bottom;

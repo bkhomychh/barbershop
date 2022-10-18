@@ -1,5 +1,5 @@
 .barbers {
-  background-color: var(--primary-bg-color);
+  background-color: $primary-bg-color;
 }
 
 .barbers__subtitle {
@@ -51,7 +51,7 @@
   font-size: 18px;
   line-height: 1.39;
   letter-spacing: 0.02em;
-  color: var(--quaternary-color);
+  color: $quaternary-color;
 }
 
 .barbers__desc {
@@ -59,5 +59,5 @@
   font-size: 14px;
   line-height: 1.36;
   letter-spacing: 0.02em;
-  color: var(--accent-color);
+  color: $accent-color;
 }

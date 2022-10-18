@@ -1,8 +1,17 @@
 .toggle {
-  color: var(--tertiary-color);
+  color: $tertiary-color;
 
   @include tablet {
     display: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &--dark {
+    color: $quaternary-color;
   }
 }
 

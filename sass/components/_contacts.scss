@@ -73,11 +73,11 @@
   margin-bottom: 20px;
 
   &::before {
-    background: var(--extra-color);
+    background: $extra-color;
   }
 }
 
 .contacts__text {
   font-size: 18px;
-  color: var(--primary-color);
+  color: $primary-color;
 }

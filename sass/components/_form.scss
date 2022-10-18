@@ -12,11 +12,11 @@
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--extra-color);
+  color: $extra-color;
 
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid var(--extra-color);
+  border-bottom: 1px solid $extra-color;
   outline: none;
 
   @include tablet {
@@ -24,13 +24,13 @@
   }
 
   &::placeholder {
-    color: var(--extra-color);
+    color: $extra-color;
   }
 
   &:focus,
   &:focus::placeholder {
-    color: var(--tertiary-color);
-    border-color: var(--tertiary-color);
+    color: $tertiary-color;
+    border-color: $tertiary-color;
   }
 
   &--large {

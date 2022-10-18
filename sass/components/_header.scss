@@ -29,11 +29,11 @@
 }
 
 .header__logo {
-  fill: var(--tertiary-color);
+  fill: $tertiary-color;
 
   @include tablet {
     margin-right: 60px;
-    fill: var(--quaternary-color);
+    fill: $quaternary-color;
   }
 
   @include desktop {
@@ -60,7 +60,7 @@
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
-  color: var(--tertiary-color);
+  color: $tertiary-color;
 }
 
 .header__contacts {

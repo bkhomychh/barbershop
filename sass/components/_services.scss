@@ -7,34 +7,28 @@
   letter-spacing: 0.02em;
 
   background-color: rgba(0, 0, 0, 0.6);
-  background-image: url(../images/services/services-bg-mob.png),
-    linear-gradient(var(--gradient-color), var(--gradient-color));
+  background-image: url(../images/services/services-bg-mob.png), $gradient-services;
   background-position: center;
   background-size: cover;
 
   @include retina {
-    background-image: url(../images/services/services-bg-mob@2x.png),
-      linear-gradient(var(--gradient-color), var(--gradient-color));
+    background-image: url(../images/services/services-bg-mob@2x.png), $gradient-services;
   }
 
   @include tablet {
     font-size: 18px;
-    background-image: url(../images/services/services-bg-tab.png),
-      linear-gradient(var(--gradient-color), var(--gradient-color));
+    background-image: url(../images/services/services-bg-tab.png), $gradient-services;
 
     @include retina {
-      background-image: url(../images/services/services-bg-tab@2x.png),
-        linear-gradient(var(--gradient-color), var(--gradient-color));
+      background-image: url(../images/services/services-bg-tab@2x.png), $gradient-services;
     }
   }
 
   @include desktop {
-    background-image: url(../images/services/services-bg-desk.png),
-      linear-gradient(var(--gradient-color), var(--gradient-color));
+    background-image: url(../images/services/services-bg-desk.png), $gradient-services;
 
     @include retina {
-      background-image: url(../images/services/services-bg-desk@2x.png),
-        linear-gradient(var(--gradient-color), var(--gradient-color));
+      background-image: url(../images/services/services-bg-desk@2x.png), $gradient-services;
     }
   }
 }
@@ -62,7 +56,7 @@
 
   padding: 30px 20px 30px 40px;
 
-  background-image: linear-gradient(var(--first-item-gradient));
+  background-image: $gradient-services-first-set;
 
   @include tablet {
     padding: 32px 27px 32px 40px;
@@ -86,11 +80,11 @@
     flex-basis: calc((100% - $gap-size * ($item-amount - 1)) / $item-amount);
 
     &:first-child {
-      background-image: linear-gradient(var(--first-item-gradient));
+      background-image: $gradient-services-first-set;
     }
 
     &:last-child {
-      background-image: linear-gradient(var(--second-item-gradient));
+      background-image: $gradient-services-second-set;
     }
   }
 }
@@ -107,7 +101,7 @@
     content: '';
     flex-grow: 1;
     margin: 0 12px;
-    border-bottom: 1px solid var(--line-color);
+    border-bottom: 1px solid $line-color;
   }
 }
 

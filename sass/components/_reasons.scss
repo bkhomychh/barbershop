@@ -47,7 +47,7 @@
 .reasons__list {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--gap-size);
+  gap: $gap-size;
 
   @include tablet {
     max-width: 450px;
@@ -69,7 +69,7 @@
 
   padding: 20px 0;
 
-  background-color: var(--primary-bg-color);
+  background-color: $primary-bg-color;
 
   &:nth-child(2) {
     position: relative;
@@ -100,7 +100,7 @@ height: 133px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.05em;
-  color: var(--quaternary-color);
+  color: $quaternary-color;
 }
 
 .reasons__num > sup {
@@ -111,7 +111,7 @@ height: 133px;
   font-size: 16px;
   line-height: 1.38;
   text-align: center;
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .reasons__desc {
@@ -122,5 +122,5 @@ height: 133px;
   font-size: 11px;
   line-height: 1.36;
   text-align: center;
-  color: var(--quaternary-color);
+  color: $quaternary-color;
 }

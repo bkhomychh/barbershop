@@ -11,8 +11,8 @@
   transform: translateX(100%);
   opacity: 0;
 
-  transition: transform var(--transition-duration) var(--transition-cubic-bezier),
-    opacity var(--transition-duration) var(--transition-cubic-bezier);
+  transition: transform $transition-duration $transition-cubic-bezier,
+    opacity $transition-duration $transition-cubic-bezier;
 
   &.is-open {
     transform: translateX(0);
@@ -37,7 +37,7 @@
   height: 100vh;
   padding: 48px 31px 48px 40px;
 
-  background-color: var(--tertiary-color);
+  background-color: $tertiary-color;
 }
 
 .mobile-menu__toggle {
@@ -55,14 +55,14 @@
 }
 
 .mobile-menu__item {
-  color: var(--quaternary-color);
+  color: $quaternary-color;
   font-weight: 600;
   font-size: 18px;
   line-height: (25 / 18);
   letter-spacing: 0.1em;
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 
