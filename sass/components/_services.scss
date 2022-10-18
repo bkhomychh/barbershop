@@ -7,13 +7,35 @@
   letter-spacing: 0.02em;
 
   background-color: rgba(0, 0, 0, 0.6);
-  background-image: url(../images/bg/services.png),
+  background-image: url(../images/services/services-bg-mob.png),
     linear-gradient(var(--gradient-color), var(--gradient-color));
   background-position: center;
   background-size: cover;
 
+  @include retina {
+    background-image: url(../images/services/services-bg-mob@2x.png),
+      linear-gradient(var(--gradient-color), var(--gradient-color));
+  }
+
   @include tablet {
     font-size: 18px;
+    background-image: url(../images/services/services-bg-tab.png),
+      linear-gradient(var(--gradient-color), var(--gradient-color));
+
+    @include retina {
+      background-image: url(../images/services/services-bg-tab@2x.png),
+        linear-gradient(var(--gradient-color), var(--gradient-color));
+    }
+  }
+
+  @include desktop {
+    background-image: url(../images/services/services-bg-desk.png),
+      linear-gradient(var(--gradient-color), var(--gradient-color));
+
+    @include retina {
+      background-image: url(../images/services/services-bg-desk@2x.png),
+        linear-gradient(var(--gradient-color), var(--gradient-color));
+    }
   }
 }
 

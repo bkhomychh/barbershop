@@ -2,10 +2,33 @@
   max-width: 1600px;
   margin: 0 auto;
   background-color: var(--secondary-bg-color);
-  background-image: url(../images/bg/contacts.png);
+  background-image: url(../images/contacts/contacts-bg-mob.png);
   background-repeat: no-repeat;
-  background-position: right;
-  background-size: 50% 100%;
+  background-position: bottom;
+  background-size: 100% 47%;
+
+  @include retina {
+    background-image: url(../images/contacts/contacts-bg-mob@2x.png);
+  }
+
+  @include tablet {
+    background-image: url(../images/contacts/contacts-bg-tab.png);
+    background-size: 100% 46%;
+
+    @include retina {
+      background-image: url(../images/contacts/contacts-bg-tab@2x.png);
+    }
+  }
+
+  @include desktop {
+    background-image: url(../images/contacts/contacts-bg-desk.png);
+    background-position: right;
+    background-size: 50% 100%;
+
+    @include retina {
+      background-image: url(../images/contacts/contacts-bg-desk@2x.png);
+    }
+  }
 }
 
 .connection__container {

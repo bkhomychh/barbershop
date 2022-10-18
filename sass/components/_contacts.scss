@@ -35,6 +35,11 @@
 
 .contacts__list {
   margin-bottom: 44px;
+
+  @include tablet {
+    margin-bottom: 0;
+  }
+
   @include desktop {
     margin-bottom: 70px;
   }

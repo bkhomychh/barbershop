@@ -161,10 +161,30 @@
         <div class="about__container container">
           <ul class="about__list">
             <li class="about__item">
-              <img src="./images/about/image-1.jpg" alt="Shaving" />
+              <picture>
+                <source
+                  srcset="./images/about/about-1-desk.jpg 1x, ./images/about/about-1-desk@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/about/about-1-tab.jpg 1x, ./images/about/about-1-tab@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <img src="./images/about/about-1-tab.jpg" alt="Shaving" />
+              </picture>
             </li>
             <li class="about__item">
-              <img src="./images/about/image-2.jpg" alt="Haircut" />
+              <picture>
+                <source
+                  srcset="./images/about/about-2-desk.jpg 1x, ./images/about/about-2-desk@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/about/about-2-tab.jpg 1x, ./images/about/about-2-tab@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <img src="./images/about/about-2-tab.jpg" alt="Haircut" />
+              </picture>
             </li>
           </ul>
           <div class="about__wrap">
@@ -280,7 +300,35 @@
           <h2 class="barbers__title title title--dark">Our barbers</h2>
           <ul class="barbers__list list">
             <li class="barbers__item">
-              <img class="barbers__img" src="./images/barbers/john.jpg" alt="John Smith photo" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/barbers/barber-1-desk.jpg    1x,
+                    ./images/barbers/barber-1-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/barbers/barber-1-tab.jpg    1x,
+                    ./images/barbers/barber-1-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/barbers/barber-1-mob.jpg    1x,
+                    ./images/barbers/barber-1-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="barbers__img"
+                  src="./images/barbers/barber-1-mob.jpg"
+                  alt="John Smith photo"
+                />
+              </picture>
+
               <h3 class="barbers__name">John Smith</h3>
               <p class="barbers__desc">Extreme Barber</p>
               <ul class="socials">
@@ -314,12 +362,36 @@
                 </li>
               </ul>
             </li>
+
             <li class="barbers__item">
-              <img
-                class="barbers__img"
-                src="./images/barbers/michele.jpg"
-                alt="Michele Doe photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/barbers/barber-2-desk.jpg    1x,
+                    ./images/barbers/barber-2-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/barbers/barber-2-tab.jpg    1x,
+                    ./images/barbers/barber-2-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/barbers/barber-2-mob.jpg    1x,
+                    ./images/barbers/barber-2-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="barbers__img"
+                  src="./images/barbers/barber-2-mob.jpg"
+                  alt="Michele Doe photo"
+                />
+              </picture>
               <h3 class="barbers__name">Michele Doe</h3>
               <p class="barbers__desc">Extreme Barber</p>
               <ul class="socials">
@@ -353,8 +425,36 @@
                 </li>
               </ul>
             </li>
+
             <li class="barbers__item">
-              <img class="barbers__img" src="./images/barbers/alan.jpg" alt="Alan Black photo" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/barbers/barber-3-desk.jpg    1x,
+                    ./images/barbers/barber-3-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/barbers/barber-3-tab.jpg    1x,
+                    ./images/barbers/barber-3-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/barbers/barber-3-mob.jpg    1x,
+                    ./images/barbers/barber-3-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="barbers__img"
+                  src="./images/barbers/barber-3-mob.jpg"
+                  alt="Alan Black photo"
+                />
+              </picture>
               <h3 class="barbers__name">Alan Black</h3>
               <p class="barbers__desc">Extreme Barber</p>
               <ul class="socials">
@@ -399,32 +499,124 @@
           <p class="portfolio__subtitle subtitle subtitle--dark">In Latin, "barba" means "beard"</p>
           <ul class="portfolio__list list">
             <li class="portfolio__item">
-              <img
-                class="portfolio__img"
-                src="./images/samples/sample1.jpg"
-                alt="Sample of our work"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/samples/sample-1-desk.jpg    1x,
+                    ./images/samples/sample-1-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/samples/sample-1-tab.jpg    1x,
+                    ./images/samples/sample-1-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/samples/sample-1-mob.jpg    1x,
+                    ./images/samples/sample-1-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="barbers__img"
+                  src="./images/samples/sample-1-mob.jpg"
+                  alt="Sample of our work"
+                />
+              </picture>
             </li>
             <li class="portfolio__item">
-              <img
-                class="portfolio__img"
-                src="./images/samples/sample2.jpg"
-                alt="Sample of our work"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/samples/sample-2-desk.jpg    1x,
+                    ./images/samples/sample-2-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/samples/sample-2-tab.jpg    1x,
+                    ./images/samples/sample-2-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/samples/sample-2-mob.jpg    1x,
+                    ./images/samples/sample-2-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="barbers__img"
+                  src="./images/samples/sample-2-mob.jpg"
+                  alt="Sample of our work"
+                />
+              </picture>
             </li>
             <li class="portfolio__item">
-              <img
-                class="portfolio__img"
-                src="./images/samples/sample3.jpg"
-                alt="Sample of our work"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/samples/sample-3-desk.jpg    1x,
+                    ./images/samples/sample-3-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/samples/sample-3-tab.jpg    1x,
+                    ./images/samples/sample-3-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/samples/sample-3-mob.jpg    1x,
+                    ./images/samples/sample-3-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="barbers__img"
+                  src="./images/samples/sample-3-mob.jpg"
+                  alt="Sample of our work"
+                />
+              </picture>
             </li>
             <li class="portfolio__item">
-              <img
-                class="portfolio__img"
-                src="./images/samples/sample4.jpg"
-                alt="Sample of our work"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/samples/sample-4-desk.jpg    1x,
+                    ./images/samples/sample-4-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/samples/sample-4-tab.jpg    1x,
+                    ./images/samples/sample-4-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/samples/sample-4-mob.jpg    1x,
+                    ./images/samples/sample-4-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="barbers__img"
+                  src="./images/samples/sample-4-mob.jpg"
+                  alt="Sample of our work"
+                />
+              </picture>
             </li>
           </ul>
         </div>
