@@ -278,28 +278,9 @@ img {
   display: block;
 }
 
-@-webkit-keyframes launch {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes launch {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 body {
   font-family: "Open Sans", sans-seri;
   color: #9da4bd;
-  -webkit-animation: launch 750ms linear both;
-          animation: launch 750ms linear both;
 }
 
 .container {
