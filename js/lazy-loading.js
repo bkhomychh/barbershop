@@ -1,5 +1,4 @@
 const lazyImages = [...document.querySelectorAll('img[data-src], source[data-srcset]')];
-console.dir(lazyImages);
 
 if ('loading' in HTMLImageElement.prototype) {
   fillSrc(lazyImages);
