@@ -34,22 +34,22 @@
             <nav class="nav">
               <ul class="nav__list">
                 <li class="nav__item">
-                  <a class="header__link link" href="#about">About</a>
+                  <a class="header__link link js-anchor" href="#about">About</a>
                 </li>
                 <li class="nav__item">
-                  <a class="header__link link" href="#services">Services and prices</a>
+                  <a class="header__link link js-anchor" href="#services">Services and prices</a>
                 </li>
                 <li class="nav__item">
-                  <a class="header__link link" href="#barbers">Barbers</a>
+                  <a class="header__link link js-anchor" href="#barbers">Barbers</a>
                 </li>
                 <li class="nav__item">
-                  <a class="header__link link" href="#contacts">Contacts</a>
+                  <a class="header__link link js-anchor" href="#contacts">Contacts</a>
                 </li>
               </ul>
             </nav>
 
             <div class="header__contacts">
-              <a class="btn header__btn" href="#booking">Online-booking</a>
+              <a class="btn header__btn js-anchor" href="#booking">Online-booking</a>
               <a class="header__link link" href="tel:+380441111111">+38 044 111 11 11</a>
             </div>
           </div>
@@ -89,16 +89,16 @@
 
           <ul class="mobile-menu__list">
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link link" href="#about">About</a>
+              <a class="mobile-menu__link link js-anchor" href="#about">About</a>
             </li>
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link link" href="#services">Services and prices</a>
+              <a class="mobile-menu__link link js-anchor" href="#services">Services and prices</a>
             </li>
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link link" href="#barbers">Barbers</a>
+              <a class="mobile-menu__link link js-anchor" href="#barbers">Barbers</a>
             </li>
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link link" href="#contacts">Contacts</a>
+              <a class="mobile-menu__link link js-anchor" href="#contacts">Contacts</a>
             </li>
           </ul>
 
@@ -107,7 +107,7 @@
               <a class="link" href="tel:+380441111111">+38 044 111 11 11</a>
             </li>
             <li class="mobile-menu__item">
-              <a class="btn btn--flexible btn--dark" href="#booking">Online-booking</a>
+              <a class="btn btn--flexible btn--dark js-anchor" href="#booking">Online-booking</a>
             </li>
           </ul>
 
@@ -163,7 +163,7 @@
                   srcset="./images/about/about-1-tab.jpg 1x, ./images/about/about-1-tab@2x.jpg 2x"
                   media="(min-width: 768px)"
                 />
-                <img src="./images/about/about-1-tab.jpg" alt="Shaving" />
+                <img src="./images/about/about-1-tab.jpg" alt="Shaving" loading="lazy" />
               </picture>
             </li>
             <li class="about__item">
@@ -176,7 +176,7 @@
                   srcset="./images/about/about-2-tab.jpg 1x, ./images/about/about-2-tab@2x.jpg 2x"
                   media="(min-width: 768px)"
                 />
-                <img src="./images/about/about-2-tab.jpg" alt="Haircut" />
+                <img src="./images/about/about-2-tab.jpg" alt="Haircut" loading="lazy" />
               </picture>
             </li>
           </ul>
@@ -192,7 +192,7 @@
               are a team that is always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <a class="btn btn--dark about__btn" href="#booking">Online-booking</a>
+            <a class="btn btn--dark about__btn js-anchor" href="#booking">Online-booking</a>
           </div>
         </div>
       </section>
@@ -244,7 +244,7 @@
               </ul>
             </li>
           </ul>
-          <a class="services__btn btn btn--centered" href="#booking">Online-booking</a>
+          <a class="services__btn btn btn--centered js-anchor" href="#booking">Online-booking</a>
         </div>
       </section>
 
@@ -319,6 +319,7 @@
                   class="barbers__img"
                   src="./images/barbers/barber-1-mob.jpg"
                   alt="John Smith photo"
+                  loading="lazy"
                 />
               </picture>
 
@@ -383,6 +384,7 @@
                   class="barbers__img"
                   src="./images/barbers/barber-2-mob.jpg"
                   alt="Michele Doe photo"
+                  loading="lazy"
                 />
               </picture>
               <h3 class="barbers__name">Michele Doe</h3>
@@ -446,6 +448,7 @@
                   class="barbers__img"
                   src="./images/barbers/barber-3-mob.jpg"
                   alt="Alan Black photo"
+                  loading="lazy"
                 />
               </picture>
               <h3 class="barbers__name">Alan Black</h3>
@@ -518,6 +521,7 @@
                   class="barbers__img"
                   src="./images/samples/sample-1-mob.jpg"
                   alt="Sample of our work"
+                  loading="lazy"
                 />
               </picture>
             </li>
@@ -548,6 +552,7 @@
                   class="barbers__img"
                   src="./images/samples/sample-2-mob.jpg"
                   alt="Sample of our work"
+                  loading="lazy"
                 />
               </picture>
             </li>
@@ -578,6 +583,7 @@
                   class="barbers__img"
                   src="./images/samples/sample-3-mob.jpg"
                   alt="Sample of our work"
+                  loading="lazy"
                 />
               </picture>
             </li>
@@ -608,6 +614,7 @@
                   class="barbers__img"
                   src="./images/samples/sample-4-mob.jpg"
                   alt="Sample of our work"
+                  loading="lazy"
                 />
               </picture>
             </li>
@@ -710,6 +717,8 @@
       </div>
     </footer>
 
-    <script src="./js/mobile-menu.js"></script>
+    <script src="js/lazy-loading.js" type="module"></script>
+    <script src="./js/mobile-menu.js" type="module"></script>
+    <script src="js/smooth-scroll.js" type="module"></script>
   </body>
 </html>
