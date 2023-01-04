@@ -14,38 +14,22 @@
 }
 
 .hero__content {
+  position: relative;
+
   margin-left: auto;
   padding: 208px 31px 209px;
-
-  background-color: rgba(0, 0, 0, 0.6);
-  background-image: $gradient-hero, url(../images/hero/hero-bg-1-mob.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  @include retina {
-    background-image: $gradient-hero, url(../images/hero/hero-bg-1-mob@2x.jpg);
-  }
 
   @include tablet {
     max-width: 570px;
     padding: 272px 20px 237px 120px;
-    background-image: $gradient-hero, url(../images/hero/hero-bg-1-tab.jpg);
-
-    @include retina {
-      background-image: $gradient-hero, url(../images/hero/hero-bg-1-tab@2x.jpg);
-    }
   }
 
   @include desktop {
     max-width: 1070px;
     padding: 272px 20px 208px 100px;
-    background-image: $gradient-hero, url(../images/hero/hero-bg-1-desk.jpg);
-
-    @include retina {
-      background-image: $gradient-hero, url(../images/hero/hero-bg-1-desk@2x.jpg);
-    }
   }
+
+  overflow: hidden;
 }
 
 .hero__title {
@@ -79,12 +63,179 @@
 }
 
 .hero__wrap {
-  display: none;
   position: relative;
+  z-index: 1;
+}
+
+.hero__slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.slider {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.slider__item {
+  width: 1070px;
+  height: 680px;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.slider__item--1 {
+  background-image: $gradient-hero, url(../images/hero/hero-bg-1-mob.jpg);
+
+  @include retina {
+    background-image: $gradient-hero, url(../images/hero/hero-bg-1-mob@2x.jpg);
+  }
 
   @include tablet {
-    display: block;
-    flex-basis: 100px;
-    flex-grow: 0;
+    background-image: $gradient-hero, url(../images/hero/hero-bg-1-tab.jpg);
+
+    @include retina {
+      background-image: $gradient-hero, url(../images/hero/hero-bg-1-tab@2x.jpg);
+    }
   }
+
+  @include desktop {
+    background-image: $gradient-hero, url(../images/hero/hero-bg-1-desk.jpg);
+
+    @include retina {
+      background-image: $gradient-hero, url(../images/hero/hero-bg-1-desk@2x.jpg);
+    }
+  }
+}
+
+.slider__item--2 {
+  background-image: $gradient-hero, url(../images/hero/hero-bg-2-mob.jpg);
+
+  @include retina {
+    background-image: $gradient-hero, url(../images/hero/hero-bg-2-mob@2x.jpg);
+  }
+
+  @include tablet {
+    background-image: $gradient-hero, url(../images/hero/hero-bg-2-tab.jpg);
+
+    @include retina {
+      background-image: $gradient-hero, url(../images/hero/hero-bg-2-tab@2x.jpg);
+    }
+  }
+
+  @include desktop {
+    background-image: $gradient-hero, url(../images/hero/hero-bg-2-desk.jpg);
+
+    @include retina {
+      background-image: $gradient-hero, url(../images/hero/hero-bg-2-desk@2x.jpg);
+    }
+  }
+}
+
+.slider__item--3 {
+  background-image: $gradient-hero, url(../images/hero/hero-bg-3-mob.jpg);
+
+  @include retina {
+    background-image: $gradient-hero, url(../images/hero/hero-bg-3-mob@2x.jpg);
+  }
+
+  @include tablet {
+    background-image: $gradient-hero, url(../images/hero/hero-bg-3-tab.jpg);
+
+    @include retina {
+      background-image: $gradient-hero, url(../images/hero/hero-bg-3-tab@2x.jpg);
+    }
+  }
+
+  @include desktop {
+    background-image: $gradient-hero, url(../images/hero/hero-bg-3-desk.jpg);
+
+    @include retina {
+      background-image: $gradient-hero, url(../images/hero/hero-bg-3-desk@2x.jpg);
+    }
+  }
+}
+
+.tns-nav {
+  display: none;
+
+  @include tablet {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+  }
+}
+
+button[data-nav] {
+  width: 8px;
+  height: 2px;
+  padding: 0;
+
+  background-color: $primary-color;
+
+  transition: transform $transition-duration $transition-cubic-bezier;
+  transform-origin: right;
+
+  &.tns-nav-active {
+    transform: scaleX(2.25);
+
+    background-color: $tertiary-color;
+  }
+}
+
+.tns-controls {
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+}
+
+button[data-controls] {
+  display: none;
+
+  @include tablet {
+    padding: 0;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 8px;
+
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 1.1;
+    color: $primary-color;
+
+    transition: color $transition-duration $transition-cubic-bezier;
+
+    &:hover {
+      color: $tertiary-color;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+
+      width: 60px;
+      height: 1px;
+
+      background-color: currentColor;
+    }
+  }
+}
+
+button[data-controls]:last-child {
+  margin-left: 24px;
+  align-items: flex-end;
 }

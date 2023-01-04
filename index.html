@@ -11,6 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.min.css"
+      integrity="sha512-06CZo7raVnbbD3BlY8/hGUoUCuhk8sTdVGV3m3nuh9i2R+UmkLbLRTE/My8TuJ3ALbDulhBObJQWtOUt0mXzNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -140,11 +147,20 @@
       <section class="hero">
         <div class="hero__container container">
           <div class="hero__content">
-            <p class="hero__subtitle subtitle">A hair salon for men in Kyiv</p>
-            <h1 class="hero__title">BarberShop</h1>
-            <p class="hero__text">
-              We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
-            </p>
+            <div class="hero__slider">
+              <div class="slider">
+                <div class="slider__item slider__item--1"></div>
+                <div class="slider__item slider__item--2"></div>
+                <div class="slider__item slider__item--3"></div>
+              </div>
+            </div>
+            <div class="hero__wrap">
+              <p class="hero__subtitle subtitle">A hair salon for men in Kyiv</p>
+              <h1 class="hero__title">BarberShop</h1>
+              <p class="hero__text">
+                We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -717,8 +733,11 @@
       </div>
     </footer>
 
-    <script src="js/lazy-loading.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
+    <script src="./js/slider-setting.js" type="module"></script>
+    <script src="./js/lazy-loading.js" type="module"></script>
     <script src="./js/mobile-menu.js" type="module"></script>
-    <script src="js/smooth-scroll.js" type="module"></script>
+    <script src="./js/smooth-scroll.js" type="module"></script>
   </body>
 </html>
