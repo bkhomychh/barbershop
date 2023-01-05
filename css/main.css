@@ -1119,41 +1119,10 @@ button[data-controls]:last-child {
   font-size: 14px;
   line-height: 1.67;
   letter-spacing: 0.02em;
-  background-color: rgba(0, 0, 0, 0.6);
-  background-image: url(../images/services/services-bg-mob.png), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
-  background-image: url(../images/services/services-bg-mob.png), linear-gradient(#111319, #111319);
-  background-position: center;
-  background-size: cover;
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .services {
-    background-image: url(../images/services/services-bg-mob@2x.png), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
-    background-image: url(../images/services/services-bg-mob@2x.png), linear-gradient(#111319, #111319);
-  }
 }
 @media screen and (min-width: 768px) {
   .services {
     font-size: 18px;
-    background-image: url(../images/services/services-bg-tab.png), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
-    background-image: url(../images/services/services-bg-tab.png), linear-gradient(#111319, #111319);
-  }
-}
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .services {
-    background-image: url(../images/services/services-bg-tab@2x.png), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
-    background-image: url(../images/services/services-bg-tab@2x.png), linear-gradient(#111319, #111319);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .services {
-    background-image: url(../images/services/services-bg-desk.png), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
-    background-image: url(../images/services/services-bg-desk.png), linear-gradient(#111319, #111319);
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .services {
-    background-image: url(../images/services/services-bg-desk@2x.png), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
-    background-image: url(../images/services/services-bg-desk@2x.png), linear-gradient(#111319, #111319);
   }
 }
 
@@ -1239,6 +1208,60 @@ button[data-controls]:last-child {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+}
+
+.jarallax {
+  position: relative;
+  z-index: 0;
+}
+
+.jarallax > .jarallax-img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.jarallax-img {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url(../images/services/services-bg-mob.png), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
+  background-image: url(../images/services/services-bg-mob.png), linear-gradient(#111319, #111319);
+  background-position: center;
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .jarallax-img {
+    background-image: url(../images/services/services-bg-mob@2x.png), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
+    background-image: url(../images/services/services-bg-mob@2x.png), linear-gradient(#111319, #111319);
+  }
+}
+@media screen and (min-width: 768px) {
+  .jarallax-img {
+    background-image: url(../images/services/services-bg-tab.png), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
+    background-image: url(../images/services/services-bg-tab.png), linear-gradient(#111319, #111319);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .jarallax-img {
+    background-image: url(../images/services/services-bg-tab@2x.png), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
+    background-image: url(../images/services/services-bg-tab@2x.png), linear-gradient(#111319, #111319);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .jarallax-img {
+    background-image: url(../images/services/services-bg-desk.png), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
+    background-image: url(../images/services/services-bg-desk.png), linear-gradient(#111319, #111319);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .jarallax-img {
+    background-image: url(../images/services/services-bg-desk@2x.png), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
+    background-image: url(../images/services/services-bg-desk@2x.png), linear-gradient(#111319, #111319);
+  }
 }
 
 .reasons {

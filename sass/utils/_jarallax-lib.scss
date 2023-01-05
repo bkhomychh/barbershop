@@ -1,0 +1,41 @@
+.jarallax {
+  position: relative;
+  z-index: 0;
+}
+
+.jarallax > .jarallax-img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.jarallax-img {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url(../images/services/services-bg-mob.png), $gradient-services;
+  background-position: center;
+  background-size: cover;
+
+  @include retina {
+    background-image: url(../images/services/services-bg-mob@2x.png), $gradient-services;
+  }
+
+  @include tablet {
+    background-image: url(../images/services/services-bg-tab.png), $gradient-services;
+
+    @include retina {
+      background-image: url(../images/services/services-bg-tab@2x.png), $gradient-services;
+    }
+  }
+
+  @include desktop {
+    background-image: url(../images/services/services-bg-desk.png), $gradient-services;
+
+    @include retina {
+      background-image: url(../images/services/services-bg-desk@2x.png), $gradient-services;
+    }
+  }
+}
