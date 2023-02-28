@@ -2,6 +2,7 @@
 }
 
 .form__item {
+  position: relative;
   flex-basis: 100%;
 
   padding-bottom: 8px;
@@ -43,6 +44,13 @@
 
 .form__btn {
   margin: 0 auto;
+
+  &:disabled {
+    background-color: $extra-color;
+    border-color: $extra-color;
+
+    cursor: not-allowed;
+  }
 
   @include tablet {
     margin: 0;

@@ -1,4 +1,10 @@
 const bookingForm = document.querySelector('.booking-form-js');
+const userPhoneNumber = bookingForm.querySelector('#phone-mask');
+const sendBtn = bookingForm.querySelector('.form__btn');
+
+let phoneMask = IMask(userPhoneNumber, {
+  mask: '+{380}-(00)-000-0000',
+});
 
 bookingForm.addEventListener('submit', onBookingFormSubmit);
 bookingForm.addEventListener('input', throttle(onBookingFormInput, 300));
@@ -18,19 +24,26 @@ function fillForm(formRef) {
   message.value = data.message;
 }
 
-function onBookingFormInput() {
+function onBookingFormInput(evt) {
   const data = getFormData();
+  const requiredElements = [...evt.currentTarget.querySelectorAll('[required]')];
+  const areFieldsEmpty = requiredElements.some(el => el.value.trim() === '');
+
   updateLocalStorage(data);
+
+  if (!areFieldsEmpty && userPhoneNumber.value.length == 18) {
+    enableBtn();
+  } else {
+    disableBtn();
+  }
 }
 
 function onBookingFormSubmit(evt) {
   evt.preventDefault();
 
-  const data = getFormData();
-  console.log(data);
-
   evt.target.reset();
   updateLocalStorage();
+  disableBtn();
 }
 
 function getFormData() {
@@ -69,16 +82,24 @@ function getDataFromLocalStorage() {
 function throttle(fn, ms) {
   let isReady = true;
 
-  return () => {
+  return evt => {
     if (!isReady) {
       return;
     }
 
-    fn();
+    fn(evt);
     isReady = false;
 
     setTimeout(() => {
       isReady = true;
     }, ms);
   };
+}
+
+function enableBtn() {
+  sendBtn.disabled = false;
+}
+
+function disableBtn() {
+  sendBtn.disabled = true;
 }

@@ -668,14 +668,29 @@
           <section class="booking section" id="booking">
             <h2 class="booking__title title">Online-booking</h2>
             <form class="booking__form form booking-form-js" autocomplete="off" novalidate>
-              <input class="form__item" type="text" name="name" placeholder="Name*" required />
-              <input class="form__item" type="tel" name="tel" placeholder="Phone*" required />
+              <input
+                class="form__item"
+                type="text"
+                name="name"
+                placeholder="Name*"
+                required
+                maxlength="50"
+              />
+              <input
+                class="form__item"
+                type="tel"
+                name="tel"
+                placeholder="Phone*"
+                id="phone-mask"
+                required
+              />
               <textarea
                 class="form__item form__item--large"
                 name="message"
                 placeholder="Message"
+                maxlength="300"
               ></textarea>
-              <button class="btn form__btn" type="submit">Send</button>
+              <button class="btn form__btn" type="submit" disabled>Send</button>
             </form>
           </section>
 
@@ -770,7 +785,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
+    <script src="https://unpkg.com/imask"></script>
     <script>
       AOS.init();
     </script>
