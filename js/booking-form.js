@@ -1,6 +1,7 @@
 const bookingForm = document.querySelector('.booking-form-js');
 const userPhoneNumber = bookingForm.querySelector('#phone-mask');
 const sendBtn = bookingForm.querySelector('.form__btn');
+const successNotice = document.querySelector('.success');
 
 let phoneMask = IMask(userPhoneNumber, {
   mask: '+{380}-(00)-000-0000',
@@ -41,9 +42,17 @@ function onBookingFormInput(evt) {
 function onBookingFormSubmit(evt) {
   evt.preventDefault();
 
+  const data = getFormData();
+  console.log(data);
+
   evt.target.reset();
   updateLocalStorage();
   disableBtn();
+  showSuccess();
+
+  setTimeout(() => {
+    hideSuccess();
+  }, 1000);
 }
 
 function getFormData() {
@@ -102,4 +111,12 @@ function enableBtn() {
 
 function disableBtn() {
   sendBtn.disabled = true;
+}
+
+function showSuccess() {
+  successNotice.classList.remove('isHidden');
+}
+
+function hideSuccess() {
+  successNotice.classList.add('isHidden');
 }
