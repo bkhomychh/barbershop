@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Barbershop" />
+    <meta name="keywords" content="Barbershop, services and prices, online-booking" />
+    <meta name="author" content="Bohdan Khomych" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BarberShop</title>
     <link rel="icon" type="image/x-icon" href="./images/logo.ico" />
@@ -664,7 +667,7 @@
           <!-- Online-booking -->
           <section class="booking section" id="booking">
             <h2 class="booking__title title">Online-booking</h2>
-            <form class="booking__form form" autocomplete="off">
+            <form class="booking__form form booking-form-js" autocomplete="off" novalidate>
               <input class="form__item" type="text" name="name" placeholder="Name*" required />
               <input class="form__item" type="tel" name="tel" placeholder="Phone*" required />
               <textarea
@@ -767,9 +770,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
     <script>
       AOS.init();
     </script>
+    <script src="./js/booking-form.js" type="module"></script>
     <script src="./js/slider-setting.js" type="module"></script>
     <script src="./js/lazy-loading.js" type="module"></script>
     <script src="./js/mobile-menu.js" type="module"></script>
