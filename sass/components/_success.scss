@@ -10,14 +10,15 @@
   align-items: center;
   justify-content: center;
 
-  opacity: 1;
-  transform: scale(1);
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.2);
   transition: all 350ms ease-in-out;
 
-  &.isHidden {
-    opacity: 0;
-    pointer-events: none;
-    transform: scale(0.2);
+  &.isShown {
+    opacity: 1;
+    pointer-events: all;
+    transform: scale(1);
   }
 }
 

@@ -114,9 +114,9 @@ function disableBtn() {
 }
 
 function showSuccess() {
-  successNotice.classList.remove('isHidden');
+  successNotice.classList.add('isShown');
 }
 
 function hideSuccess() {
-  successNotice.classList.add('isHidden');
+  successNotice.classList.remove('isShown');
 }
