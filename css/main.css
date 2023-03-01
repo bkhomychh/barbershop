@@ -513,8 +513,9 @@ body {
   top: 0;
   left: 0;
   z-index: 1000;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
   background: rgba(25, 28, 38, 0.2);
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -537,16 +538,15 @@ body {
 
 .backdrop__container {
   position: relative;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  overflow: auto;
 }
 
 .mobile-menu {
-  position: absolute;
-  top: 0;
-  right: 0;
-  max-width: 337px;
-  height: 100vh;
   padding: 48px 31px 48px 40px;
-  background-color: #ffffff;
 }
 
 .mobile-menu__toggle {
