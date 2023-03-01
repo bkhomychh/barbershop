@@ -1,6 +1,7 @@
 .container {
   margin: 0 auto;
   padding: 0 31px;
+  min-width: 320px;
 
   @include mobile {
     max-width: 480px;
@@ -43,6 +44,7 @@
 
 .section {
   padding: 84px 0;
+  min-width: 320px;
 
   @include tablet {
     padding: 100px 0;

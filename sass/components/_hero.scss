@@ -38,10 +38,14 @@
   font-family: $secondary-font-family;
   font-weight: 700;
 
-  font-size: 48px;
+  font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: $tertiary-color;
+
+  @include tablet {
+    font-size: 48px;
+  }
 
   @include desktop {
     font-size: 72px;

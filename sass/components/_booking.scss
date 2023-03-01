@@ -1,5 +1,6 @@
 .booking {
   flex-basis: 50%;
+  min-width: auto;
 
   @include desktop {
     padding: 130px 0;

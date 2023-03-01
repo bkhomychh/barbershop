@@ -286,6 +286,7 @@ body {
 .container {
   margin: 0 auto;
   padding: 0 31px;
+  min-width: 320px;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -333,6 +334,7 @@ body {
 
 .section {
   padding: 84px 0;
+  min-width: 320px;
 }
 @media screen and (min-width: 768px) {
   .section {
@@ -347,6 +349,10 @@ body {
 
 .no-scroll {
   overflow: hidden;
+}
+
+.header {
+  min-width: 320px;
 }
 
 .header__container {
@@ -724,10 +730,15 @@ body {
   margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 48px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -1583,6 +1594,7 @@ button[data-controls]:last-child {
 
 .connection {
   max-width: 1600px;
+  min-width: 320px;
   margin: 0 auto;
   background-color: #191c26;
   background-image: url(../images/contacts/contacts-bg-mob.png);
@@ -1630,6 +1642,7 @@ button[data-controls]:last-child {
 .booking {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  min-width: auto;
 }
 @media screen and (min-width: 1200px) {
   .booking {
@@ -1840,6 +1853,7 @@ button[data-controls]:last-child {
 }
 
 .footer {
+  min-width: 320px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
